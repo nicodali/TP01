@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+*{
+	box-sizing: border-box; /*  descuenta del awidth y height lo sumado en padding y border */
+}
+
+body{
+	
+	font-family: 'Raleway', sans-serif;
+	margin:0;   /* Es para sacarle los margenes al Body */
+ }
+/* ressets */
+/* agrupacion de selectores */
+ul, ol{
+	list-style: none; /* elimina las viñetas */
+	margin: 0; /* MArgin auto solo sirve para Horizontal */
+	padding: 0; /*relleno */
+}
+figure{
+	margin: 0;
+}
+
+/*
+	tamaños - 
+	ancho - width: ;
+	alto - height: ;
+	modelo de cajas - Box Model
+	-width
+	-height
+	-padding
+	-border
+		Border-stye |solid | dasshed | dotted | double |
+		border-width
+		border-color
+		border:;
+	-margin
+*/	
+P{
+	font-size: 14px;
+}
+h2, h3, h4 { font-size: 18;
+ }
+ .main-header{
+ 	width: 1200px;
+ 	margin: auto;
+ 	border: solid 1px red;
+ 	padding: 20px 0;
+ }
+ .logo{
+ 	float: left; /* hay tres valores para el Float (right left none), con float, el elemento da un paso al frente*/
+ 	border: solid 1px green;
+ }
+ .main-nav{
+ 	float:right;
+ 	border:solid 1px yellow;
+ 	}
+ /*Selector Descendente */	
+ .main-nav li {
+ 	float: left;
+ 	margin: 8px 0 0 15px;
+ }
+/*limpiar la flotacion, es hacer que la cosas no se dañen cuando aplcicamos el float */
+.cleaner{
+	clear:both; /* Limpia la flotacion para que el contenedor quede en cero */
+}
+/* El HTML es un documento secuencial, pero con el Float puedo acomodar los elementos en diferentes posiciones*/
+/* si aplico la flotacion a un elemento que esta dentro de otro que ya esta flota, no necesito volver aplicar el Float*/
+
+/*  Estoy centrando el fondo, el primer valor es el horizontal, el segundo vertical y el ultimo comando es para que no se repita */
+#banner{
+	background: url(../images/indexbanner-bg3.jpg) center top no-repeat;
+	background-size: cover;  /*Es el tamallo de la imagen de fondo y el valor "cover" le dice que tiene que ocupar todo el ancho y alto */
+}
+.container{
+	width: 1200px;
+	margin: auto;
+	
+
+}
+.banner-title{
+	font-size: 50px;
+	color:#fff;
+	padding-top: 120px;
+	margin: 0;
+}
+.baner-text{
+	font-size: 20;
+	
+	color: #fff;
+}
+.register{
+	background: #06B4F2;
+	position: relative;
+	top: 30px;
+}
+.register input{
+	width: 1000px;
+	height: 60px;
+	font-size: 16px;
+	font-family: inherit;
+}
+.register button{
+	border: none;
+	width: 195px;
+	height: 60px;
+	background-color: #06B4F2;
+
+	font-family: inherit;
+	font-size: 16;
+}
+/* El posicionamiento relativo nos permite acomodar en funcion de la posicion */
+.product{
+	border: dashed 1px green;
+	width: 300px;
+	text-align: center;
+	float: left; /* si le pongo right me invierte el orden de los objetos*/
+	margin-top: 100px;
+}

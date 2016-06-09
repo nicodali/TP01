@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+body{
+	
+	font-family: 'Raleway', sans-serif;
+}
+
+p{
+	/* font-size: 12px;  	--- con Esto se define el tamaño en pixeles*/
+	/* font-weight: bold; 	--- define si se ve en negrita*/
+	/* font-style: italic;  ---define cursiva*/
+	font:  bold italic 13px/20px 'raleway';  /* esta tecnica se llama short-hand | debo declarar un minimo de 3 valores */
+}
+a{	
+	text-decoration: none; /* el valor por defecto es none, pero se puede usar Underline | overline | line-trough*/
+	text-transform: uppercase; /* por defoult su valor es normal, pero yo puedo con Uppercase que el texto se vea en mayuscula*/
+	line-height: 20px; /* Debe ser el mismo font Size + 7px (es para hacer interlineado)*/
+	text-align: left; /* right - center - justife */
+	color: #000; /* por el nombre black | valor hexadecimal | rgba (10,12,10,0.8) */
+}
+#banner {
+	background-color: #fff;
+	background-image: url(../images/indexbanner-bg2.jpg);
+	background-repeat: no-repeat; /*  es para que la imagen de fondo no se repita tipo mosaico, con este comando no se repite*/
+	/* TEnes el repet-x para que se repita horizontalmente y el repit-y*/
+	background-position: 50% 50%;
+	background-attachment: scroll;  /* hay otro valor que se llama Fixed, define el comportamiento de la img cuando se hace scroll*/
+}
+/* Aca comienza el menu*/	
